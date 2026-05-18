@@ -33,7 +33,7 @@ pipeline {
         stage('Sonatype IQ Policy Evaluation') {
             steps {
                 nexusPolicyEvaluation(
-                    iqApplication: 'sonatype-sdlc-demo',
+                    iqApplication: 'sonatype-sdlc-demo-git',
                     iqStage: 'build'
                 )
             }
